@@ -54,6 +54,9 @@ sudo chmod +x install_lamp.sh
 sudo ./install_lamp.sh
 ```
 
+### If this project helped you reduce time to setup, feel free to give me a cup of coffee :)  
+https://www.anirbandutta.in/pay/   
+
 
 
 
