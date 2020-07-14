@@ -33,9 +33,9 @@ DATABASE_USER="lampdbuser"
 INSTALL_PHPMYADMIN="False"
 # Set your domain name to be mapped 
 WEBSITE_NAME="example.com"
-# Set this to False if you don't need to install Free SSL for Website
+# Set this to True if you need to install Free SSL for the Website
 ENABLE_SSL="False"
-# Set admin email for website
+# Set admin email for issuing SSL
 ADMIN_EMAIL="admin@example.com"
 # Set this to True if you need to secure PhpMyAdmin installation
 SECURE_PHPMYADMIN="False"
@@ -216,7 +216,7 @@ if [ $INSTALL_APACHE = "True" ]; then
 echo "Visit website: http://$WEBSITE_NAME "
 echo "Document root:  /var/www/html/$WEBSITE_NAME"
 echo "Apache configuration file:  /etc/apache2/sites-available/$WEBSITE_NAME.conf "
-echo "Check apache status:   systemctl status apache2"
+echo "Check Apache status:   systemctl status apache2"
 fi
 if [ $INSTALL_MYSQL = "True" ]; then
   echo "Check Mysql Status:  systemctl status mariadb"
