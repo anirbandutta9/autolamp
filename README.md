@@ -20,13 +20,13 @@ This script can be used on blank ubuntu VPS/Dedivated server. This script can au
 
 ## Installation Procedure :
 
-##### 1. SSH to your server as root user:
+#### 1. SSH to your server as root user:
 
-##### 2. Download the script:
+#### 2. Download the script:
 ```
 sudo wget https://raw.githubusercontent.com/anirbandutta9/autolamp/master/install_lamp.sh
 ```
-##### 3. Set the parameters inside the script as you wish.
+#### 3. Set the parameters inside the script as you wish.
 Set this to False if you don't need to install apache webserver  
 ``` INSTALL_APACHE="True" ```   
 Set this to False if you don't need to install PHP  
@@ -49,14 +49,12 @@ Set this to True if you need to secure PhpMyAdmin installation
 sudo chmod +x install_lamp.sh
 ```
 
-##### 5. Execute the script:
+#### 5. Execute the script:
 ```
 sudo ./install_lamp.sh
 ```
 
 ### If this project helped you reduce time to setup, feel free to give me a cup of coffee :)  
 https://www.anirbandutta.in/pay/   
-
-
 
 
