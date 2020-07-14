@@ -26,4 +26,34 @@ This script can be used on blank ubuntu VPS/Dedivated server. This script can au
 ```
 sudo wget https://raw.githubusercontent.com/anirbandutta9/autolamp/master/install_lamp.sh
 ```
+##### 3. Set the parameters inside the script as you wish.
+Set this to False if you don't need to install apache webserver  
+``` INSTALL_APACHE="True" ```   
+Set this to False if you don't need to install PHP  
+``` INSTALL_PHP="True" ```  
+Set this to False if you don't need to install any database server  
+``` INSTALL_MYSQL="True" ```  
+SET this to True if you need to create a database   
+``` CREATE_DATABASE="False" ```  
+Set the database name and user you want to create  
+``` DATABASE_NAME="lampdb" ```  
+``` DATABASE_USER="lampdbuser" ```  
+Set admin email for issuing SSL  
+``` ADMIN_EMAIL="admin@example.com" ```  
+Set this to True if you need to secure PhpMyAdmin installation  
+``` SECURE_PHPMYADMIN="False" ```  
+
+
+#### 4. Make the script executable
+```
+sudo chmod +x install_lamp.sh
+```
+
+##### 5. Execute the script:
+```
+sudo ./install_lamp.sh
+```
+
+
+
 
