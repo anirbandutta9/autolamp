@@ -55,7 +55,7 @@ if [ $INSTALL_APACHE != "True" ] && [ $INSTALL_MYSQL != "True" ] && [ $INSTALL_P
         echo "Please set some values to True for the script to run! "
         exit 1;
     fi
-	
+
 banner()
 {
   echo "+-----------------------------------------------------------------------+"
@@ -88,7 +88,6 @@ cat <<EOF > ~/$WEBSITE_NAME.conf
 
     ServerName $WEBSITE_NAME
     ServerAlias www.$WEBSITE_NAME
-
     ServerAdmin webmaster@$WEBSITE_NAME
     DocumentRoot /var/www/html/$WEBSITE_NAME
 
@@ -155,9 +154,6 @@ else
   echo "PhpMyAdmin isn't installed due to the choice of the user!"
 fi
 
-
-
-
 #--------------------------------------------------
 # Enable ssl with certbot
 #--------------------------------------------------
@@ -171,8 +167,6 @@ if [ $INSTALL_APACHE = "True" ] && [ $ENABLE_SSL = "True" ] && [ $ADMIN_EMAIL !=
 else
   echo "SSL/HTTPS isn't enabled due to choice of the user or because of a misconfiguration!"
 fi
-
-
 
 #--------------------------------------------------
 # Create MySql database and User
@@ -201,7 +195,6 @@ cat <<EOF > ~/database.txt
    >> Database  : ${DATABASE_NAME}
    >> User      : ${DATABASE_USER}
    >> Pass      : ${DATABASE_PASS}
-   
 
 EOF
 echo "Successfully Created Database and User! "
@@ -237,4 +230,3 @@ if [ $CREATE_DATABASE = "True" ]; then
   echo "Database information saved at : /root/database.txt"
 fi
 echo "-----------------------------------------------------------"
-
