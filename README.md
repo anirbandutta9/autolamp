@@ -54,6 +54,10 @@ sudo chmod +x install_lamp.sh
 sudo ./install_lamp.sh
 ```
 
+### Check installation steps on youtube 
+https://youtu.be/Z5Up34z5PaQ
+
+
 ### If this project reduced your time and effort to setup, feel free to give me a cup of coffee :)  
 https://www.anirbandutta.in/pay/   
 
